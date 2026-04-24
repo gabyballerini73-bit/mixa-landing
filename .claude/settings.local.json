@@ -1,0 +1,24 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__Claude_Preview__preview_start",
+      "Bash(where python:*)",
+      "Bash(where python3:*)",
+      "Bash(where node:*)",
+      "Bash(where npx:*)",
+      "Bash(cmd.exe /c \"start /B C:\\\\Windows\\\\System32\\\\WindowsPowerShell\\\\v1.0\\\\powershell.exe -NoProfile -ExecutionPolicy Bypass -File \\\\\"C:\\\\Users\\\\gabyb\\\\Desktop\\\\claude\\\\web\\\\serve.ps1\\\\\" > C:\\\\Users\\\\gabyb\\\\AppData\\\\Local\\\\Temp\\\\mixa-serve.log 2>&1\")",
+      "Read(//c/Users/gabyb/AppData/Local/Temp/**)",
+      "Bash(cmd.exe /c \"C:\\\\Windows\\\\System32\\\\WindowsPowerShell\\\\v1.0\\\\powershell.exe -NoProfile -ExecutionPolicy Bypass -Command \\\\\"[System.Net.HttpListener]::new\\(\\) | Out-Null; Write-Host 'OK'\\\\\" 2>&1\")",
+      "Bash(\"/c/Users/gabyb/AppData/Local/Microsoft/WindowsApps/python.exe\" --version)",
+      "Bash(cmd.exe /c \"where magick 2>nul & where convert 2>nul & where ffmpeg 2>nul\")",
+      "Bash(cmd.exe /c \"C:\\\\Windows\\\\System32\\\\WindowsPowerShell\\\\v1.0\\\\powershell.exe -NoProfile -ExecutionPolicy Bypass -File C:\\\\Users\\\\gabyb\\\\Desktop\\\\claude\\\\web\\\\remove_bg.ps1\")",
+      "Bash(echo \"EXIT:$?\")",
+      "Bash(cmd.exe /c \"C:\\\\Windows\\\\System32\\\\WindowsPowerShell\\\\v1.0\\\\powershell.exe -NoProfile -ExecutionPolicy Bypass -File C:\\\\Users\\\\gabyb\\\\Desktop\\\\claude\\\\web\\\\remove_bg.ps1 2>&1\")",
+      "Bash(cmd.exe /c \"C:\\\\Windows\\\\System32\\\\WindowsPowerShell\\\\v1.0\\\\powershell.exe -NoProfile -ExecutionPolicy Bypass -File C:\\\\Users\\\\gabyb\\\\Desktop\\\\claude\\\\web\\\\remove_bg.ps1 > C:\\\\Users\\\\gabyb\\\\AppData\\\\Local\\\\Temp\\\\removebg.log 2>&1\")",
+      "Bash(cmd.exe /c \"C:\\\\Windows\\\\System32\\\\WindowsPowerShell\\\\v1.0\\\\powershell.exe -NoProfile -ExecutionPolicy Bypass -Command \\\\\"Add-Type -AssemblyName System.Drawing; [System.Drawing.Bitmap]::new\\(10,10\\).Save\\('C:\\\\\\\\Users\\\\\\\\gabyb\\\\\\\\AppData\\\\\\\\Local\\\\\\\\Temp\\\\\\\\test.png'\\); Write-Output OK\\\\\" > C:\\\\Users\\\\gabyb\\\\AppData\\\\Local\\\\Temp\\\\test.log 2>&1\")",
+      "Bash(cmd.exe /c \"C:\\\\Windows\\\\System32\\\\WindowsPowerShell\\\\v1.0\\\\powershell.exe -NoProfile -ExecutionPolicy Bypass -Command \\\\\"'test' | Out-File C:\\\\Users\\\\gabyb\\\\Desktop\\\\ps_test.txt\\\\\"\")",
+      "Bash(cmd.exe /c \"C:\\\\Windows\\\\System32\\\\WindowsPowerShell\\\\v1.0\\\\powershell.exe -NoProfile -ExecutionPolicy Bypass -Command \\\\\"Set-Content -Path 'C:\\\\\\\\Users\\\\\\\\gabyb\\\\\\\\Desktop\\\\\\\\ps_test2.txt' -Value 'hello'\\\\\"\")",
+      "Bash(sort -t/ -k1)"
+    ]
+  }
+}

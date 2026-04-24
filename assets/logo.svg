@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 80" width="320" height="80">
+  <!-- Globe icon -->
+  <defs>
+    <radialGradient id="globeGrad" cx="40%" cy="35%" r="60%">
+      <stop offset="0%" stop-color="#56C271"/>
+      <stop offset="50%" stop-color="#1A4D3B"/>
+      <stop offset="100%" stop-color="#0D2E22"/>
+    </radialGradient>
+    <clipPath id="circleClip">
+      <circle cx="40" cy="40" r="34"/>
+    </clipPath>
+  </defs>
+
+  <!-- Globe background -->
+  <circle cx="40" cy="40" r="34" fill="url(#globeGrad)"/>
+
+  <!-- Grid lines (latitude/longitude) -->
+  <g clip-path="url(#circleClip)" fill="none" stroke="rgba(255,255,255,0.25)" stroke-width="0.8">
+    <!-- Latitude lines -->
+    <ellipse cx="40" cy="40" rx="34" ry="11"/>
+    <ellipse cx="40" cy="40" rx="34" ry="22"/>
+    <ellipse cx="40" cy="28" rx="24" ry="8"/>
+    <ellipse cx="40" cy="52" rx="24" ry="8"/>
+    <!-- Longitude lines -->
+    <ellipse cx="40" cy="40" rx="11" ry="34"/>
+    <ellipse cx="40" cy="40" rx="22" ry="34"/>
+  </g>
+
+  <!-- Layer stripes (the distinctive MiXa stacked layers) -->
+  <g clip-path="url(#circleClip)">
+    <rect x="6" y="43" width="68" height="5" fill="#4CAF50" opacity="0.85"/>
+    <rect x="6" y="50" width="68" height="4" fill="#E8C547" opacity="0.9"/>
+    <rect x="6" y="56" width="68" height="3.5" fill="#1A4D3B" opacity="0.95"/>
+  </g>
+
+  <!-- Data nodes (yellow dots with lines) -->
+  <g fill="none">
+    <circle cx="30" cy="28" r="2.5" fill="#E8C547"/>
+    <circle cx="46" cy="22" r="2" fill="#E8C547"/>
+    <circle cx="55" cy="32" r="2" fill="#E8C547"/>
+    <line x1="30" y1="28" x2="46" y2="22" stroke="#E8C547" stroke-width="1" opacity="0.8"/>
+    <line x1="46" y1="22" x2="55" y2="32" stroke="#E8C547" stroke-width="1" opacity="0.8"/>
+    <line x1="30" y1="28" x2="55" y2="32" stroke="#E8C547" stroke-width="0.7" opacity="0.5"/>
+  </g>
+
+  <!-- Globe border -->
+  <circle cx="40" cy="40" r="34" fill="none" stroke="rgba(255,255,255,0.15)" stroke-width="1"/>
+
+  <!-- MiXa text -->
+  <text x="88" y="44" font-family="Georgia, 'DM Serif Display', serif" font-size="36" font-weight="400" fill="#1C2B4A" letter-spacing="-1">
+    <tspan>Mi</tspan><tspan font-weight="700" fill="#1A4D3B">X</tspan><tspan>a</tspan>
+  </text>
+
+  <!-- Mining Intelligence subtitle -->
+  <text x="90" y="60" font-family="Arial, 'DM Sans', sans-serif" font-size="12" fill="#6B7280" letter-spacing="1.5" font-weight="400">Mining Intelligence</text>
+</svg>
